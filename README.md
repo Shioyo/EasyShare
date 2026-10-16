@@ -1,3 +1,5 @@
+# _!!!项目由ChatGPT独立完成_
+
 <p align="center">
   <img src="docs/assets/icon.png" width="96" alt="EasyShare 图标">
 </p>
@@ -12,6 +14,7 @@
 </p>
 
 ![EasyShare Windows 主界面](docs/assets/screenshot.png)
+
 
 
 ## 快速开始
