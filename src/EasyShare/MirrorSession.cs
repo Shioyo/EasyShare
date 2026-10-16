@@ -81,8 +81,8 @@ public sealed class MirrorSession : IAsyncDisposable
         log($"ADB 画质：{(scale == 1 ? "原始分辨率，禁止自动降级" : scale == 3 ? "最长边 1080" : "最长边 1600")}；H.264 {VideoBitRateMbps} Mbps；帧率上限 {fps}；窗口自动适配。");
         log("鼠标控制：左键点击、长按和拖动，右键返回，中键回到主屏幕；自动剪贴板同步关闭。");
         log(UseTabletIme
-            ? "中文输入：请求 UHID 外接键盘；电脑输入法保持英文，打拼音、空格选词。若只出现英文，在投屏的普通文本框中按 Ctrl + Shift 将小艺切到中文。"
-            : "兼容键盘：使用 SDK 普通按键，中文请开启「中文输入 · 使用平板输入法」后重新投屏。");
+            ? "中文输入：请求 UHID 外接键盘；电脑输入法保持英文，由平板当前输入法处理拼音和候选，不限定小艺。需输入法支持外接键盘中文输入；若只出现英文，请按其设置切换中文。小艺 Ctrl + Shift 已实测，其他输入法尚未实测。"
+            : "兼容键盘：使用 SDK 普通按键，中文请开启「使用平板输入法」后重新投屏。");
         log(AudioEnabled
             ? $"系统声音：请求通过 USB 传到电脑，Opus 目标码率 {AudioBitRateKbps} kbps；等待实际输出确认。"
             : "系统声音：不传输，仍在平板播放。");
@@ -159,7 +159,7 @@ public sealed class MirrorSession : IAsyncDisposable
             || line.Contains("Could not send UHID_CREATE message (keyboard)", StringComparison.Ordinal)
             || line.Contains("Could not push UHID_INPUT message (key)", StringComparison.Ordinal)))
         {
-            const string message = "平板外接键盘连接失败。可取消「中文输入 · 使用平板输入法」后重新投屏，暂用普通键盘；详情见日志。";
+            const string message = "平板外接键盘连接失败。可取消「使用平板输入法」后重新投屏，暂用普通键盘；详情见日志。";
             if (Interlocked.CompareExchange(ref keyboardFailure, message, null) == null)
             {
                 log(message);

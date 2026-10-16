@@ -11,7 +11,7 @@
       </StackPanel>
       <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
         <Border Background="#E8EDF9" CornerRadius="14" Padding="12,6" Margin="0,0,12,0"><TextBlock Text="USB 直连" FontSize="11" Foreground="#50638F"/></Border>
-        <TextBlock x:Name="VersionText" Text="v0.5.0" FontFamily="Segoe UI" FontSize="12" Foreground="#8994AA" VerticalAlignment="Center"/>
+        <TextBlock x:Name="VersionText" Text="v0.5.1" FontFamily="Segoe UI" FontSize="12" Foreground="#8994AA" VerticalAlignment="Center"/>
       </StackPanel>
     </Grid>
     <Grid Grid.Row="1" x:Name="ContentGrid">
@@ -65,9 +65,9 @@
                 <TabItem Header="键盘">
                   <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><StackPanel Margin="0,0,4,0">
                     <CheckBox x:Name="TabletImeBox" Content="使用平板输入法" IsChecked="True" Checked="Options_Changed" Unchecked="Options_Changed"/>
-                    <TextBlock Text="用电脑键盘打拼音，在平板上选词。" Style="{StaticResource Caption}" Margin="0,9,0,19"/>
-                    <Border Background="#EFF4FF" CornerRadius="12" Padding="15"><StackPanel><TextBlock Text="中文输入小提示" FontSize="12" FontWeight="SemiBold" Foreground="#3457AF" Margin="0,0,0,8"/><TextBlock x:Name="TabletImeHint" Text="电脑输入法保持英文。若只出现英文，在投屏输入框内按 Ctrl + Shift 将小艺切到中文。" Style="{StaticResource Caption}" Foreground="#526994"/></StackPanel></Border>
-                    <TextBlock Text="取消后使用普通键盘模式。其他输入法的语言切换方式可能不同。" Style="{StaticResource Caption}" FontSize="11" Margin="0,17,0,0"/>
+                    <TextBlock Text="使用平板当前输入法，不限定小艺。" Style="{StaticResource Caption}" Margin="0,9,0,19"/>
+                    <Border Background="#EFF4FF" CornerRadius="12" Padding="15"><StackPanel><TextBlock Text="中文输入小提示" FontSize="12" FontWeight="SemiBold" Foreground="#3457AF" Margin="0,0,0,8"/><TextBlock x:Name="TabletImeHint" Text="电脑输入法保持英文，平板启用支持外接键盘的中文输入法。用电脑打拼音，由平板输入法显示候选、选词。" Style="{StaticResource Caption}" Foreground="#526994"/></StackPanel></Border>
+                    <TextBlock Text="更改后重新投屏。此模式不直接传输 Windows 输入法选好的中文。" Style="{StaticResource Caption}" FontSize="11" Margin="0,17,0,0"/>
                   </StackPanel></ScrollViewer>
                 </TabItem>
               </TabControl>

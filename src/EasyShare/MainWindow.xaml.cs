@@ -43,7 +43,7 @@ public partial class MainWindow : Window
             System.Windows.Media.RenderOptions.ProcessRenderMode = System.Windows.Interop.RenderMode.SoftwareOnly;
         }
         InitializeComponent();
-        VersionText.Text = "v" + (typeof(MainWindow).Assembly.GetName().Version?.ToString(3) ?? "0.5.0");
+        VersionText.Text = "v" + (typeof(MainWindow).Assembly.GetName().Version?.ToString(3) ?? "0.5.1");
         discoveryTimer.Tick += async (_, _) => await RefreshAsync();
     }
 
@@ -495,8 +495,8 @@ public partial class MainWindow : Window
                 ConnectionBadge.Text = "正在投屏";
                 PlaceholderTitle.Text = "大屏已就绪，开始操作吧";
                 var keyboardHint = current.UseTabletIme
-                    ? "电脑输入法保持英文，打拼音、空格选词。若只出现英文，在投屏输入框内按 Ctrl + Shift 将小艺切到中文，再试一次。"
-                    : "当前为普通键盘输入；需要平板输入法选词时，结束投屏后开启左侧中文输入选项。";
+                    ? "电脑输入法保持英文，平板选择支持外接键盘的中文输入法；用电脑打拼音，由平板输入法选词。若只出现英文，请按该输入法的设置切换中文。"
+                    : "当前为普通键盘输入；需要平板输入法选词时，结束投屏后在「键盘」页开启「使用平板输入法」。";
                 PlaceholderDetail.Text = "在「EasyShare · 平板画面」窗口内：左键点击为触摸，按住不动为长按，按住拖动为滑动；右键返回，中键回到主屏幕。"
                     + keyboardHint + "Alt + F 全屏；退出全屏并还原窗口后，左 Alt + G 按 1:1 像素显示。关闭画面窗口或点击「结束投屏」停止。";
                 UpdateExternalStreamInfo(current);
@@ -578,7 +578,7 @@ public partial class MainWindow : Window
         TabletImeBox.IsEnabled = editable && !isHdc;
         TabletImeHint.Text = isHdc ? "当前 HDC 连接方式暂不支持电脑键盘输入。"
             : TabletImeBox.IsChecked == true
-                ? "电脑输入法保持英文，打拼音、空格选词。若只出现英文，在投屏输入框内按 Ctrl + Shift 将小艺切到中文。更改勾选后重新投屏。"
+                ? "电脑输入法保持英文，平板选择支持外接键盘的中文输入法，用电脑打拼音、选词。\n只出英文时，请按当前输入法的方式切换中文。\n已验证示例：小艺在普通文本框中按 Ctrl + Shift。其他输入法尚未实测。"
                 : "当前使用普通键盘模式；输入中文请开启此选项。更改后重新投屏。";
     }
 
