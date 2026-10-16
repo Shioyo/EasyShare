@@ -11,7 +11,7 @@
       </StackPanel>
       <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
         <Border Background="#E8EDF9" CornerRadius="14" Padding="12,6" Margin="0,0,12,0"><TextBlock Text="USB 直连" FontSize="11" Foreground="#50638F"/></Border>
-        <TextBlock x:Name="VersionText" Text="v0.5.1" FontFamily="Segoe UI" FontSize="12" Foreground="#8994AA" VerticalAlignment="Center"/>
+        <TextBlock x:Name="VersionText" Text="v0.5.2" FontFamily="Segoe UI" FontSize="12" Foreground="#8994AA" VerticalAlignment="Center"/>
       </StackPanel>
     </Grid>
     <Grid Grid.Row="1" x:Name="ContentGrid">

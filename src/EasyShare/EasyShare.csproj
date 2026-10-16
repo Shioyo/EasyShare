@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <Version>0.5.1</Version>
+    <Version>0.5.2</Version>
     <ApplicationIcon>Assets\easyshare.ico</ApplicationIcon>
     <RuntimeFrameworkVersion>8.0.32</RuntimeFrameworkVersion>
   </PropertyGroup>

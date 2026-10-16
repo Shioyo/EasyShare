@@ -43,7 +43,7 @@ public partial class MainWindow : Window
             System.Windows.Media.RenderOptions.ProcessRenderMode = System.Windows.Interop.RenderMode.SoftwareOnly;
         }
         InitializeComponent();
-        VersionText.Text = "v" + (typeof(MainWindow).Assembly.GetName().Version?.ToString(3) ?? "0.5.1");
+        VersionText.Text = "v" + (typeof(MainWindow).Assembly.GetName().Version?.ToString(3) ?? "0.5.2");
         discoveryTimer.Tick += async (_, _) => await RefreshAsync();
     }
 
@@ -578,7 +578,7 @@ public partial class MainWindow : Window
         TabletImeBox.IsEnabled = editable && !isHdc;
         TabletImeHint.Text = isHdc ? "当前 HDC 连接方式暂不支持电脑键盘输入。"
             : TabletImeBox.IsChecked == true
-                ? "电脑输入法保持英文，平板选择支持外接键盘的中文输入法，用电脑打拼音、选词。\n只出英文时，请按当前输入法的方式切换中文。\n已验证示例：小艺在普通文本框中按 Ctrl + Shift。其他输入法尚未实测。"
+                ? "电脑输入法保持英文，平板选择支持外接键盘的中文输入法，用电脑打拼音、选词。\n只出英文时，请按当前输入法的方式切换中文。"
                 : "当前使用普通键盘模式；输入中文请开启此选项。更改后重新投屏。";
     }
 

@@ -5,7 +5,7 @@
 <h1 align="center">EasyShare</h1>
 
 <p align="center">把 Android / HarmonyOS 设备的画面，通过 USB 带到 Windows。</p>
-<p align="center">0.5.1 · Windows 10 / 11 x64 · 中文界面</p>
+<p align="center">0.5.2 · Windows 10 / 11 x64 · 中文界面</p>
 
 <p align="center">
   <a href="https://github.com/Shioyo/EasyShare/releases">下载 Releases</a> ·
@@ -19,7 +19,7 @@
 
 [EasyShare](https://github.com/Shioyo/EasyShare) 将 USB 设备发现、画质、声音和输入设置集中在一个 Windows 桌面界面。0.5.0 更新应用图标与界面，将设置整理为 **画面 / 声音 / 键盘** 三个页签。ADB 设备使用官方 scrcpy 显示独立投屏窗口；HDC 设备使用 HOScrcpy 与内嵌播放器。程序按设备实际提供的调试接口选择连接方式。
 
-0.5.1 仅澄清中文输入提示：可使用支持外接键盘中文输入的平板输入法，小艺是本机已验证的示例。
+0.5.2 精简软件键盘页的中文输入小提示，保留通用操作说明；详细输入法说明见下文。
 
 ## 功能
 
