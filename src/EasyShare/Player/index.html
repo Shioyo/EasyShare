@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EasyShare Player</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; background: #101c2b; overflow: hidden; font-family: 'Microsoft YaHei UI', sans-serif; }
+    canvas { width: 100%; height: 100%; object-fit: contain; display: none; }
+    #message { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; color: #dfeafa; padding: 40px; line-height: 1.9; }
+    #message strong { font-size: 22px; font-weight: 500; }
+    #message span { display: block; color: #8da2bc; font-size: 13px; margin-top: 15px; max-width: 440px; }
+  </style>
+</head>
+<body>
+  <canvas id="screen"></canvas>
+  <div id="message"><strong>正在连接平板…</strong><span>请保持平板解锁。首次连接需要一点时间。</span></div>
+  <script src="decoder.js"></script>
+  <script src="player.js"></script>
+</body>
+</html>

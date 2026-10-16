@@ -1,0 +1,131 @@
+{
+  "dotnet": "8.0.32",
+  "java": "Eclipse Temurin 25.0.3+9 via jlink",
+  "hdc": {
+    "sdk": "6.0.0.47",
+    "version": "3.2.0b",
+    "archiveEntry": "windows/toolchains-windows-x64-6.0.0.47-Beta1.zip",
+    "source": "https://repo.huaweicloud.com/openharmony/os/6.0-Release/ohos-sdk-windows_linux-public.tar.gz"
+  },
+  "webview2Sdk": "1.0.3537.50",
+  "hosscrcpy": {
+    "mirror": "https://github.com/ns-zzj/dsh-hos-scrcpy",
+    "version": "1.0.18-beta",
+    "tree": "a25b81a60f06857c169c849d981809e4e2743588",
+    "project": "https://gitcode.com/OpenHarmonyToolkitsPlaza/HOScrcpy",
+    "blob": "ee3970d79d1bc36b5ad1b068d2def9c7befa7dc4"
+  },
+  "files": [
+    {
+      "sha256": "2ce60b1893cc2be471a8cd7eab7e4127e41921f1f89a32a134c730ba15c8c0fd",
+      "path": "tools/hosscrcpy/hosScrcpy-1.0.18-beta.jar"
+    },
+    {
+      "sha256": "f6d6c47551d976f33b0f22b17a74f345c0788e59131873aa5f75d356f5141d9b",
+      "path": "tools/hdc/hdc.exe"
+    },
+    {
+      "sha256": "77d35ec3e2b3be8201aaab90ea2f8470c6d960be38bd941fc8c26bfcacace73b",
+      "path": "tools/hdc/libusb_shared.dll"
+    },
+    {
+      "sha256": "d5f1b9e03e298ebfb04d2326ecc1e2af3e6817f9b4d7f9f151fe856d56975650",
+      "path": "tools/jre/bin/java.exe"
+    }
+  ],
+  "scrcpy": {
+    "name": "scrcpy",
+    "version": "5.0.1",
+    "platform": "Windows x64",
+    "publisher": "Genymobile / Romain Vimont",
+    "release": "https://github.com/Genymobile/scrcpy/releases/tag/v5.0.1",
+    "published_utc": "2026-10-08T06:44:27Z",
+    "download": "https://github.com/Genymobile/scrcpy/releases/download/v5.0.1/scrcpy-win64-v5.0.1.zip",
+    "archive_sha256": "b12a2c4ee8be317422451fc7dcf8ee20a71b5ea7ef9ad73ddd825a25316227a5",
+    "verification": "Matches official GitHub asset SHA256 digest and official SHA256SUMS.txt. Signature file retained but GPG signature verification was not performed.",
+    "local_tool_directory": "tools/scrcpy",
+    "license": "tools/scrcpy/LICENSE.txt",
+    "files": [
+      {
+        "name": "adb.exe",
+        "bytes": 8273560,
+        "sha256": "b4a6b455702684652cccf7b46258b29e653538904359a58fd4931cf3ef286b3f"
+      },
+      {
+        "name": "AdbWinApi.dll",
+        "bytes": 108184,
+        "sha256": "c1d653030b4bde65d3e07e4d0b0979e17be56df1436cdd15528630f27808050d"
+      },
+      {
+        "name": "AdbWinUsbApi.dll",
+        "bytes": 73368,
+        "sha256": "0710e894d9b40f71a670c13c694079d564c92c1279da382cfe4850983aaebe1b"
+      },
+      {
+        "name": "avcodec-63.dll",
+        "bytes": 8685568,
+        "sha256": "159928e3bbe7beaca046ccf831fdf44f1e5559c0e63417f007889a6bb2c5de88"
+      },
+      {
+        "name": "avformat-63.dll",
+        "bytes": 743424,
+        "sha256": "4dbb0c1c8262f7ae45e7edc4866e26f53b358bf4fc7a0b971f15d1f2d7baf22f"
+      },
+      {
+        "name": "avutil-61.dll",
+        "bytes": 1047552,
+        "sha256": "52eb504ced0ea6d9e936d348df51c8aaeec1cae8fa4a7dba339fea87d7cce725"
+      },
+      {
+        "name": "disconnected.png",
+        "bytes": 4703,
+        "sha256": "e394873cd3e2cc3ab0cca6212b10ed2a8a0fad11a05675c8a9fa6f26f3ae12c0"
+      },
+      {
+        "name": "libusb-1.0.dll",
+        "bytes": 227005,
+        "sha256": "0c82e969c046d816507a2fe1e57253a334cb203bd6ea223194ad17c007154f32"
+      },
+      {
+        "name": "LICENSE.txt",
+        "bytes": 11387,
+        "sha256": "01c12035bf35af37241298dc7ad538eb2a07e5c940437bc6876feeaa9d1951d0"
+      },
+      {
+        "name": "open_a_terminal_here.bat",
+        "bytes": 5,
+        "sha256": "843758795a84d0d035a7d277ad29cc1ff1702048b4b61ae74b9e3439ae683423"
+      },
+      {
+        "name": "scrcpy-noconsole.vbs",
+        "bytes": 212,
+        "sha256": "3ccda94c161f18cef07c50d4d3c4913eb883d4b0fe3b939c35fae52784fb1d2b"
+      },
+      {
+        "name": "scrcpy-server",
+        "bytes": 733930,
+        "sha256": "764eb6f79811d5211fe9df341120882ba9994c7a61b897d7bf3fb662e53bc536"
+      },
+      {
+        "name": "scrcpy.exe",
+        "bytes": 766717,
+        "sha256": "64bcee493d9243dab1e84093928014348738e31f3225e67558210e6b6cfb9cd6"
+      },
+      {
+        "name": "scrcpy.png",
+        "bytes": 6530,
+        "sha256": "8e8ca237898faa16014cdd118396af53405b423f3db0508c50cc3edce08eb313"
+      },
+      {
+        "name": "SDL3.dll",
+        "bytes": 5384859,
+        "sha256": "288aaf5b4f246bd84c276351867e3132cfcd9b0a9d25fb679c8d94b30cdf333e"
+      },
+      {
+        "name": "swresample-7.dll",
+        "bytes": 139776,
+        "sha256": "7b57e891bf09c43422d79f98cf9d1830c4b1d48a251423ce5fb8c2048eb8fc1e"
+      }
+    ]
+  }
+}

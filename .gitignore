@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+tools/
+dist/
+research/
+*-tree.json
+.dotnet/
+.nuget/
+artifacts/
+**/selftest/
+*.user

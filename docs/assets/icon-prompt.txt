@@ -1,0 +1,7 @@
+EasyShare application icon
+Generated with the built-in image_gen tool. Transparent background requested.
+The original generation is preserved at src/EasyShare/Assets/easyshare-original.png.
+The final PNG and multi-resolution ICO are resized/format-converted from this image.
+
+Prompt:
+Use case: logo-brand. Asset type: production Windows desktop application icon for EasyShare, a USB tablet-to-PC screen mirroring tool. Create a single polished application icon centered on a square canvas: a rich deep-indigo rounded-square tile containing two simple offset rounded screen shapes that interlock through a clever clean negative-space connection, conveying a tablet sharing its display with a computer. Palette: deep indigo, electric blue, mint cyan; the front screen can be mint cyan and the rear screen electric blue, with just a restrained subtle tonal transition in the tile. Bold compact geometric forms, substantial thickness, strong recognizable silhouette at 16 pixels, modern professional Windows app brand, crisp edges and precise proportions. The entire rounded-square tile should occupy about 90 percent of the square canvas with balanced padding. Actual transparent outside background, preserve transparent corner regions. Flat graphic rendering with minimal gentle depth only, no cast shadow outside tile, no fine lines, no detailed texture, no dramatic gradients, no glass effects, no 3D perspective. Exactly one icon, no mockup, no multiple variants, no letters, no words, no watermark, no border or UI around it.
